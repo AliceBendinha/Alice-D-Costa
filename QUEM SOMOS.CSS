@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* força o elemento a obeder o tamanho do container em que foi criado*/
+}
+
+body{
+    font-family: Arial black; /* mudar tipo de letra*/
+}
+
+#cabecalho{
+    background-color: rgb(163, 235, 47);
+    display: flex;
+    justify-content: space-between; /* alinhando os elementos na horizontal*/
+    padding: 20px;
+}
+
+#area-logo{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#menu{
+    display: flex;
+    align-items: center; /* alinhando os elementos na vertical*/
+    margin-right: 110px;
+    margin-top: 65px;
+
+    font-size: 18pt;
+}
+
+#logotipo{
+    width: 200px;
+}
+
+#menu li{
+    display: inline-block;
+    margin-left: 18px;
+}
+
+#menu a{
+    cursor: pointer; /* Mudar o cursor para uma mão*/
+    text-decoration: none;
+    color: #fff;
+    transition: all 1s; /* me permite determinar como vão ocorrer as transições, animações e transformações no elemento*/
+}
+
+/* estilização ao passar o cursor no elemento, disparando o evento hover*/
+
+#menu a:hover{
+    color: rgb(165, 9, 238);
+    font-size: 18px;
+}
+
+#banner{
+    width: 100%;
+    
+}
+
+#banner img{
+    margin: 0 auto;
+    width: 100%;
+
+   
+
+}
+
+main{
+    text-align: center;
+    
+}
+
+main #intro{
+    margin-top: 30px;
+    padding: 30px;
+    color: #222;
+}
+#intro h1{
+color:rgb(212, 154, 28);
+margin-left: 1000%;
+
+}
+#intro p{
+    margin-top: 12px;
+    color: #000;
+}
+
+
+/* ESTILIZANDO O CARTÃO DO CURSO e area offc*/
+
+#intro{
+    
+    padding: 20px;
+    width: 100%;
+    display: flex; /* para usar as propriedades do flexbox*/
+    flex-direction: row;/* flex-direction: mexe na orientação dos elementos filhos, ou seja, horizontal ou vertical, ou linha ou coluna*/
+    flex-wrap: wrap; /* flex-wrap: define se o elemento vai ser multilinha ou não, ou , se vai quebrar ou não*/
+    
+}
+
+.card{
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    text-align: left;
+    width: 390px;
+    
+}
+
+
+.card .card-body{
+    padding: 20px;
+    
+    color: #0413e4;
+}
+
+.card .card-body p{
+    font-size: 14px;
+    color:#000;
+    margin-top: 12px;
+   
+
+}
+
+.card .card-body h5{
+   
+    width: 120px;
+    text-align: left;
+    font-size: 16px;
+    padding: 10px;
+    
+
+}
+
+
+footer{
+    background-color: #222;
+    padding: 30px;
+    margin-top: 100px;
+    color: #fff;
+    text-align: center; /* alinhar o texto ao centro*/
+}
+
+

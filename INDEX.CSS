@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* força o elemento a obeder o tamanho do container em que foi criado*/
+}
+
+body{
+    font-family: Arial black; /* mudar tipo de letra*/
+}
+
+#cabecalho{
+    background-color: rgb(47, 191, 235);
+    display: flex;
+    justify-content: space-between; /* alinhando os elementos na horizontal*/
+    padding: 20px;
+}
+
+#area-logo{
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#menu{
+    display: flex;
+    align-items: center; /* alinhando os elementos na vertical*/
+    margin-right: 110px;
+    margin-top: 65px;
+
+    font-size: 18pt;
+}
+
+#logotipo{
+    width: 200px;
+}
+
+#menu li{
+    display: inline-block;
+    margin-left: 18px;
+}
+
+#menu a{
+    cursor: pointer; /* Mudar o cursor para uma mão*/
+    text-decoration: none;
+    color: #fff;
+    transition: all 1s; /* me permite determinar como vão ocorrer as transições, animações e transformações no elemento*/
+}
+
+/* estilização ao passar o cursor no elemento, disparando o evento hover*/
+
+#menu a:hover{
+    color: rgb(212, 154, 28);
+    font-size: 18px;
+}
+
+#banner{
+    width: 100%;
+    
+}
+
+#banner img{
+    margin: 0 auto;
+    width: 100%;
+
+   
+
+}
+
+main{
+    text-align: center;
+    color: #222222;
+}
+
+main #intro{
+    margin-top: 30px;
+    padding: 30px;
+    color: #222;
+}
+#intro h1{
+color:rgb(212, 154, 28)
+
+}
+#intro p{
+    margin-top: 12px;
+    color: slategrey;
+}
+
+#bl{
+    color: #000;
+}
+
+/* ESTILIZANDO O CARTÃO DO CURSO e area offc*/
+
+#offc{
+    padding: 20px;
+    width: 100%;
+    display: flex; /* para usar as propriedades do flexbox*/
+    flex-direction: row;/* flex-direction: mexe na orientação dos elementos filhos, ou seja, horizontal ou vertical, ou linha ou coluna*/
+    flex-wrap: wrap; /* flex-wrap: define se o elemento vai ser multilinha ou não, ou , se vai quebrar ou não*/
+    
+}
+
+.conteudo h1{
+    color: blueviolet;
+}
+.com{
+    color: #666;
+}
+.card-title{
+    color:green;
+}
+
+.cartao{
+    margin-top: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    text-align:left;
+    width: 47%;
+    border-radius: 16px;
+}
+
+.cartao img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+            /* c.esq c.dir b.esq b.dir  */
+
+}
+
+.cartao .conteudo{
+    padding: 20px;
+}
+
+.cartao .conteudo p{
+    font-size: 14px;
+    color: #666;
+    margin-top: 12px;
+    margin-bottom: 20px;
+
+}
+
+.cartao .conteudo h4{
+    margin-bottom: 12px;
+    background-color: rgba(75,0,130,0.1);
+    width: 120px;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 30px;
+    color: #4B0082;
+
+}
+
+.hr2 {
+    border: 0;
+    border-top: 1px dashed #CCC;
+  }
+
+.redes{
+    flex-direction: row;/* flex-direction: mexe na orientação dos elementos filhos, ou seja, horizontal ou vertical, ou linha ou coluna*/
+    flex-wrap: wrap; 
+}
+
+footer{
+    background-color: #222;
+    padding: 30px;
+    margin-top: 100px;
+    color: #fff;
+    text-align: center; /* alinhar o texto ao centro*/
+}
+
+.scrollToTop{   
+    position:fixed;
+    top:75px; 
+    right:40px;
+    display:none;
+}
+
+
+
+
